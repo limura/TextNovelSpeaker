@@ -9,10 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var m_Speaker: Speaker
+    
+    init(){
+        m_Speaker = Speaker()
+        super.init(nibName: nil, bundle: nil)
+    }
                             
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        m_Speaker.Speak("こんにちは hello")
     }
 
     override func didReceiveMemoryWarning() {
